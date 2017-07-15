@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web大前端开发</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="web前端，技能展示" />
+    <meta name="description" content="个人节能展示平台,知识积累平台" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/sun_tz_animate.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav_wrap">
+            <div class="logo">
+                <div class="logo_left">
+                    <div class="logo_text">WEB</div>
+                    <div class="logo_content">
+                        <p><i class="iconfont icon-liebiao"></i></p>
+                    </div>
+                </div>
+            </div>
+            <nav class="header_nav navBtn">
+                <ul class="nav_content">
+                    <li class="on">首页</li>
+                    <li>特效</li>
+                    <li>发现</li>
+                    <li>作品</li>
+                    <li>技能</li>
+                    <li>联系</li>
+                    <li class="line"></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header_right">
+            <a href="javascript:;" class="icon_music infinite">
+                <i class="iconfont icon-iconfontbiaozhunmoban01"></i>
+            </a>
+            <!-- 换肤 -->
+            <div class="skin_wrap fr">
+                <i class="iconfont icon-skin"></i>
+                <ul class="skin">
+                    <li class="red"></li>
+                    <li class="pink"></li>
+                    <li class="blue"></li>
+                    <li class="black"></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="all_page wrapPage" id="allPage">
+        <!-- 首页 -->
+        <section class="main page">
+            <!-- 首页逐字显示 -->
+            <h1 class="title" id="words"></h1>
+            <!-- 3D旋转 -->
+            <div class="box_wrap">
+                <div class="screen">
+                    <ul>
+                        <li><span>Web</span><img src="images/logo.jpg"alt=""></li>
+                        <li><span>Web</span><img src="images/logo.jpg"alt=""></li>
+                        <li><span>Web</span><img src="images/logo.jpg"alt=""></li>
+                    </ul>
+                </div>
+                <div class="screen">
+                    <ul>
+                        <li><span>front-end</span><img src="images/logo.jpg"alt=""></li>
+                        <li><span>front-end</span><img src="images/logo.jpg"alt=""></li>
+                        <li><span>front-end</span><img src="images/logo.jpg"alt=""></li>
+                    </ul>
+                </div>
+                <div class="screen">
+                    <ul>
+                        <li><span>development</span><img src="images/logo.jpg"alt=""></li>
+                        <li><span>development</span><img src="images/logo.jpg"alt=""></li>
+                        <li><span>development</span><img src="images/logo.jpg"alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 首页向下的箭头 -->
+            <div class="down_arrow" id="down_arrow">
+                <i class="iconfont icon-icon01"></i>
+            </div>
+            <div class="bg_shadow"></div>
+        </section>
+        <!-- 特效 -->
+        <section class="special page">
+            <h1 class="title">好的东西依然存在</h1>
+            <div class="special_wrap">
+                <div class="s_pic">
+                    <img src="images/special/1.jpg" />
+                    <img src="images/special/2.jpg" />
+                    <img src="images/special/3.jpg" />
+                    <img src="images/special/4.jpg" />
+                    <img src="images/special/5.jpg" />
+                    <img src="images/special/6.jpg" />
+                    <img src="images/special/7.jpg" />
+                    <img src="images/special/8.jpg" />
+                    <img src="images/special/9.jpg" />
+                    <img src="images/special/10.jpg" />
+                    <img src="images/special/11.jpg" />
+                </div>
+            </div>
+            <div class="bg_shadow"></div>
+        </section>
+        <!-- 发现 -->
+        <section class="find page">
+            <h1 class="title">分享一切美好的事物</h1>
+            <div class="find_wrap">
+                <div class="animate fl" id="isAnimation"></div>
+            </div>
+            <div class="bg_shadow"></div>
+        </section>
+        <!-- 作品 -->
+        <section class="project page">
+            <h1 class="title"> <a href=""></a>
+                <span class="title1">曾经的项目 <span class="mask">,</span></span>
+                <span class="title2">历历在目<span class="mask">。</span></span>
+            </h1>
+            <div class="project_wrap">
+                <ul>
+                    <li id="project1">
+                        <div class="top">
+                            <i class="iconfont icon-pc"></i>
+                            <!-- <img src="images/index/top.jpg"alt=""> -->
+                        </div>
+                        <div class="bottom">
+                            <p class="b_title">后台售票管理系统</p>
+                            <p class="note">PC端项目</p>
+                            <p class="mask">立即查看</p>
+                        </div>
+                        <div class="more">
+                            <div class="m_title">
+                                <p class="b_title">后台售票管理系统</p>
+                                <p class="note">PC端项目</p>
+                            </div>
+                            <p class="detail">详情描述：这是一个多功能大型的旅游售票系统。</p>
+                        </div>
+                    </li>
+                    <li id="project2">
+                        <div class="top">
+                            <i class="iconfont icon-pc"></i>
+                            <!-- <img src="images/index/top.jpg"alt=""> -->
+                        </div>
+                        <div class="bottom">
+                            <p class="b_title">济宁智慧旅游网</p>
+                            <p class="note">PC端项目</p>
+                            <p class="mask">立即查看</p>
+                        </div>
+                        <div class="more">
+                            <div class="m_title">
+                                <p class="b_title">济宁智慧旅游网</p>
+                                <p class="note">PC端项目</p>
+                            </div>
+                            <p class="detail">详情描述：这是一个大型的信息应用旅游网站。</p>
+                        </div>
+                    </li>
+                    <li id="project3">
+                        <div class="top">
+                            <i class="iconfont icon-yidongduan1"></i>
+                            <!-- <img src="images/index/top.jpg"alt=""> -->
+                        </div>
+                        <div class="bottom">
+                            <p class="b_title">微信端电商平台</p>
+                            <p class="note">移动端项目</p>
+                            <p class="mask">立即查看</p>
+                        </div>
+                        <div class="more">
+                            <div class="m_title">
+                                <p class="b_title">微信端电商平台</p>
+                                <p class="note">移动端项目</p>
+                            </div>
+                            <p class="detail">详情描述：这是一个大型的微商平台，产品上架-下架-销售-支付-发货等功能。</p>
+                        </div>
+                    </li>
+                    <li id="project4">
+                        <div class="top">
+                            <i class="iconfont icon-yidongduan1"></i>
+                            <!-- <img src="images/index/top.jpg"alt=""> -->
+                        </div>
+                        <div class="bottom">
+                            <p class="b_title">微信端外卖平台</p>
+                            <p class="note">移动端项目</p>
+                            <p class="mask">立即查看</p>
+                        </div>
+                        <div class="more">
+                            <div class="m_title">
+                                <p class="b_title">微信端外卖平台</p>
+                                <p class="note">移动端项目</p>
+                            </div>
+                            <p class="detail">详情描述：属于线上线下结合的移动端项目。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg_shadow"></div>
+        </section>
+        <!-- 技能 -->
+        <section class="skill page">
+            <h1 class="title">我能做什么</h1>
+            <div class="skill_wrap">
+                <div class="pic pic1">
+                    <div class="text">
+                        <p class="P_title">工作内容</p>
+                        <div class="work_content content">
+                            <p>1.负责公司移动微信端的web开发。</p>
+                            <p>2.负责公司网站的前端性能优化和用户体验优化工作。</p>
+                            <p>3.负责各种主流浏览器的兼容适配工作。</p>
+                            <p>4.负责实现各种javascript交互的操作，配合后端开发人员实现产品交互界面。</p>
+                            <p>5.负责公司官网修改和维护。</p>
+                            <p>6.负责公司后台操作和管理体系的界面开发。</p>
+                            <p>7. 通过近几年的不断努力学习和工作，积累不少的前端开发工作经验，对现在的pc端和移动端的前端开发工作都能胜任了。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pic pic2">
+                    <div class="text">
+                        <p class="P_title">工作技术</p>
+                        <div class="work_technology content">
+                            <p>1.熟练 HTML5/HTML、CSS3/CSS、JavaScript、Ajax、jquery、Zepto等前端技术。</p>
+                            <p>2.熟练使用腾讯的frozen UI. 和 We UI 等移动端库的开发。</p>
+                            <p>3.熟悉 vue.js框架开发。</p>
+                            <p>4.熟悉前端开发中使用过的一些插件如：highcharts.js、 layer 百度地图等。</p>
+                            <p>5.熟悉bootstrap和AdminDesigns等PC端响应式布局框架</p>
+                            <p>6.熟练使用Sublime软件及vim+emmet插件开发。</p>
+                            <p>7.对移动端Web开发经验比较充足，熟悉各种手机分辨率及兼容和性能优化。</p>
+                            <p>8.熟悉 HTML 5 特性，了解 HTML 5 最新规范，能够熟练运用 HTML 5 特性构建移动端的 WebApp。</p>
+                            <p>9.对网站SEO优化有一定的了解。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pic pic3">
+                    <div class="text">
+                        <p class="P_title">PC端项目</p>
+                        <div class="content p_content">
+                            <i class="iconfont icon-liulanqi-IE"></i>
+                            <i class="iconfont icon-liulanqi-Chrome"></i>
+                            <i class="iconfont icon-huohuliulanqi1"></i>
+                            <i class="iconfont icon-liulanqi-Opera"></i>
+                            <p>HTML5+CSS3 响应式布局</p>
+                            <p>各种浏览器的兼容性</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pic pic4">
+                    <div class="text">
+                        <p class="P_title">移动端项目</p>
+                        <div class="content p_content">
+                             <i class="iconfont icon-shouji"></i>
+                             <i class="iconfont icon-ipad"></i>
+                             <p>各种屏幕大小的适配</p>
+                             <p>各种用户体验的设计</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg_shadow"></div>
+        </section>
+        <!-- 联系 -->
+        <section class="contact page">
+            <h1 class="title">与我的联系，一直在期待中...</h1>
+            <div class="contact_wrap">
+                <ul>
+                    <li class="tel">
+                    <p><i class="iconfont icon-dianhua-copy"></i></p>
+                        <a href="#" class="pic">13600000000</a>
+                    </li>
+                    <li class="qq">
+                        <p><i class="iconfont icon-qq"></i></p>
+                        <a href="#" class="pic">10000000</a>
+                    </li>
+                    <li class="map">
+                        <p><i class="iconfont icon-map"></i></p>
+                        <a href="#" class="pic"><span>坐标 : XX</span></a>
+                    </li>
+                    <li class="addr top">
+                        <p><i class="iconfont icon-gongsi"></i></p>
+                        <a href="#" class="pic"><span>目前就职公司:<br>XXXXXXXX有限公司</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg_shadow"></div>
+        </section>
+    </div>
+<script src="js/common.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/index.js"></script>
+<script src="js/special.js"></script>
+<script src="js/find.js"></script>
+<script>
+    $(function(){
+        // 检查是否Chrome打开
+        checkBrowser();
+        function checkBrowser(){
+            var userAgent = navigator.userAgent;
+            var isChrome = userAgent.indexOf("Chrome") > -1;
+            var isSafair = userAgent.indexOf("Safair") > -1;
+            if (!isChrome) {
+                alert("因本网站用到3D技术，请使用谷歌浏览器打开")
+            }
+        }
+
+        // 技能里的动画
+        $(".skill_wrap .pic").hover(function(){
+            $(this).stop(true).animate({width:"1000px"},600).siblings().stop().animate({width:"70px"}, 600);
+            $(this).addClass('sel').siblings().removeClass('sel');
+        });
+        // 作品的跳转页面
+        $("#project1").click(function(){
+            window.location.href="case/system/system.html";
+        });
+        $("#project2").click(function(){
+            window.location.href="case/jnTour/jnTour.html";
+        });
+        $("#project3").click(function(){
+            window.location.href="case/saohe/saohe.html";
+        });
+        $("#project4").click(function(){
+            window.location.href="case/takeOut/takeOut.html";
+        });
+         // 联系里的动画
+        var anim = ['rot','top','sca'];
+        var a,b;
+        $('.contact_wrap ul li').hover(function(){
+            a = anim[Math.floor(Math.random()*3)];
+            while (b==a)
+            {
+                a = anim[Math.floor(Math.random()*3)];
+            }
+            $(this).toggleClass(a);
+            b = a;
+        },function(){
+            $(this).toggleClass(a);
+        });
+    });
+</script>
+</body>
+</html>

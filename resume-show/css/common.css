@@ -1,0 +1,198 @@
+/*logo效果*/
+.logo{
+    position: fixed;
+    top:20px;
+    left: 20px;
+    width: 60px;
+    height:60px;
+    cursor:pointer;
+    z-index: 10;
+}
+.logo_left .logo_text{
+    position: absolute;
+    left:15px;
+    top:0;
+    line-height: 60px;
+    text-align: center;
+}
+.logo_left{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-size:cover;
+    box-shadow:0 0 0 3px rgba(0,179,138,1) inset;
+    transition:all 1s ease;
+    -ms-transition:all 1s ease;
+}
+.logo_content{
+    background:rgba(0,179,138,0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 50%;
+    text-align:center;
+    -webkit-transform:scale(0);
+    -webkit-transition:all 1s ease;
+    -ms-transform:scale(0);
+    -ms-transition:all 1s ease;
+}
+
+.logo_content p{
+    text-align:center;
+    line-height: 60px;
+    color:#fff;
+    opacity: 0;
+    -webkit-transform:scale(0);
+    -ms-transform:scale(0);
+    -webkit-transition:all 1s ease;
+    -ms-transition:all 1s ease;
+}
+.logo:hover .logo_content{
+    opacity: 1;
+    border-radius: 50%;
+    -webkit-transform:scale(1);
+    -ms-transform:scale(1);
+}
+.logo:hover .logo_text{
+    opacity: 0;
+    transition:all 1s ease;
+    -ms-transition:all 1s ease;
+}
+.logo:hover .logo_left{
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.1) inset;
+}
+.logo:hover .logo_content p{
+    opacity: 1;
+    -webkit-transform:scale(1);
+    -ms-transform:scale(1);
+}
+.logo_content p i{
+    font-size: 24px;
+}
+.nav_wrap{
+    position: fixed;
+    top:100px;
+    left: 15px;
+    width: 70px;
+    background: rgba(0,0,0,0.3);
+    color:#eaeaea;
+    z-index: 10;
+}
+.logo_right{
+    margin-top:22px;
+    font-size: 12px;
+}
+.header_right{
+    position: fixed;
+    top:20px;
+    right: 15px;
+    z-index: 10;
+    width: 75px;
+}
+.header_right i{
+    font-size: 20px;
+    color:#fff;
+    margin-right: 15px;
+}
+.header_nav{
+    font-size: 18px;
+}
+.header_nav ul li{
+    line-height: 70px;
+    width:70px;
+    text-align: center;
+    letter-spacing:3px;
+    cursor:pointer;
+    text-shadow:0 5px 5px #000;
+}
+.nav_content{
+    opacity: 0;
+    height: 0;
+    position: relative;
+    overflow: hidden;
+}
+.nav_content .line{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    z-index:-1;
+    background:rgba(255,255,255,0.1);
+}
+.nav_content .on{
+    color: #00b38a;
+}
+.nav_content li:hover{
+    color: #00b38a;
+}
+
+/*音乐*/
+.icon_music.infinite i{
+    display:inline-block;
+    animation:rotate 2s linear infinite;
+    -ms-animation:rotate 2s linear infinite;
+    -webkit-animation:rotate 2s linear infinite;
+    -ms-animation:rotate 2s linear infinite;
+}
+
+@-webkit-keyframes rotate{
+    form{-webkit-transform:rotate(0deg);
+        -webkit-transform-origin:center center;
+    }
+    to{-webkit-transform:rotate(360deg);
+        -webkit-transform-origin:center center;
+    }
+@-ms-keyframes rotate{
+    form{-ms-transform:rotate(0deg);
+    }
+    to{-ms-transform:rotate(360deg);
+    }
+/*换肤*/
+.skin_wrap{
+    margin-left: 10px;
+    cursor:pointer;
+}
+.skin_wrap:hover .skin{
+    display: block;
+    -webkit-animation: flip 1s;
+    -ms-animation: flip 1s;
+}
+@-webkit-keyframes flip{
+    form{-webkit-transform:rotateY(0deg); opacity:0;}
+    to{-webkit-transform:rotateY(360deg); opacity:1;}
+}
+@-ms-keyframes flip{
+    form{-ms-transform:rotateY(0deg); opacity:0;}
+    to{-ms-transform:rotateY(360deg); opacity:1;}
+}
+.skin_wrap .skin{
+    display: none;
+    position:fixed;
+    right: 5px;
+    top:80px;
+    cursor:pointer;
+}
+.skin_wrap .skin li{
+    width: 50px;
+    height: 30px;
+}
+.skin_wrap .skin li:hover{
+    opacity:0.5;
+}
+.skin .red{
+    background: red;
+}
+.skin .pink{
+    background: pink;
+}
+.skin .blue{
+    background: blue;
+}
+.skin .black{
+    background: black;
+}
+
+
+

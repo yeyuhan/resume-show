@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台售票管理系统</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/system.css">
+</head>
+<body>
+    <div id="banner_wrap">
+        <div class="con">
+            <ul>
+                <li><img src="images/01.png" /></li>
+                <li><img src="images/02.png" /></li>
+                <li><img src="images/03.png" /></li>
+                <li><img src="images/04.png" /></li>
+                <li><img src="images/05.png" /></li>
+                <li><img src="images/06.png" /></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="bor"><img src="images/01.png" /></li>
+                <li><img src="images/02.png" /></li>
+                <li><img src="images/03.png" /></li>
+                <li><img src="images/04.png" /></li>
+                <li><img src="images/05.png" /></li>
+                <li><img src="images/06.png" /></li>
+            </ul>
+        </div>
+    </div>
+   <button class="back">Back</button>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+
+        var i = 0;
+        // $("#banner_wrap").hover(function(){
+        //     $(".play").css("opacity","1");
+        // },function(){
+        //     $(".play").css("opacity","0");
+        // })
+        $(".menu ul li").hover(function(){
+            // $(".play").css("opacity","0");
+            $(this).addClass("bor").siblings().removeClass("bor");
+            i = $(this).index();
+            $(".con ul li").eq(i).stop(true,true).fadeIn(300).siblings().stop(true,true).fadeOut(300);
+            clearInterval(time);
+        },function(){
+            // $(".play").css("opacity","1");
+            time=setInterval("junmper()",3000);
+        })
+        function junmper(){
+            i++; //i=i+1;
+            if(i>6)
+            i=0;
+            $(".con ul li").eq(i).stop(true,true).fadeIn(300).siblings().stop(true,true).fadeOut(300);
+            $(".menu ul li").eq(i).addClass("bor").siblings().removeClass("bor");
+        }
+        var time=setInterval("junmper()",3000);
+
+        $(".back").click(function(){
+            window.history.back(-1);
+        });
+
+</script>
+</body>
+</html>
